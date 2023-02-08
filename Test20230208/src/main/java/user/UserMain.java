@@ -25,7 +25,7 @@ public class UserMain {
 
         List<User>userList = new ArrayList<>();
         userList.add(user1);
-        System.out.println(userList);
+        //System.out.println(userList);
 
         ObjectMapper mapper = new ObjectMapper();
         mapper.enable(SerializationFeature.INDENT_OUTPUT);
@@ -44,5 +44,7 @@ public class UserMain {
         } catch (IOException e) {
             System.out.println("Cannot write to file " + e.getMessage());
         }
+
+        userList.clear();
     }
 }
